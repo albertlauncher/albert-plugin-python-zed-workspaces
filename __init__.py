@@ -26,7 +26,7 @@ from albert import (  # type: ignore
 from dateutil.parser import isoparse
 
 md_iid = '2.3'
-md_version = "0.1"
+md_version = "0.2"
 md_name = "Zed Workspaces"
 md_description = "Open your Zed workspaces"
 md_license = "MIT"
