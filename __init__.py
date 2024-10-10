@@ -120,7 +120,7 @@ class Plugin(PluginInstance, TriggerQueryHandler):
                 name="Zed Editor",
                 icon=plugin_dir / "icons" / "zed.svg",
                 config_dir_prefix=f"{zed_dir_name}/db/0-stable",
-                binaries=["zed", "zeditor"])
+                binaries=["zed", "zeditor", "zedit", "zed-cli"])
         ]
         self.editors = [e for e in editors if e.binary is not None]
 
