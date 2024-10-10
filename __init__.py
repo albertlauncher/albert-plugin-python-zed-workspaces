@@ -64,7 +64,6 @@ class Editor:
     def list_workspaces(self) -> list[Workspace]:
         config_dir = Path.home() / ".local/share/"
         if platform == "darwin":
-            # TODO: Add Mac Support
             config_dir = Path.home() / "Library" / "Application Support"
 
         dirs = list(config_dir.glob(f"{self.config_dir_prefix}*/"))
@@ -112,11 +111,15 @@ class Plugin(PluginInstance, TriggerQueryHandler):
         )
 
         plugin_dir = Path(__file__).parent
+        zed_dir_name = "zed"
+        if platform == "darwin":
+            zed_dir_name = "Zed"
+
         editors = [
             Editor(
                 name="Zed Editor",
                 icon=plugin_dir / "icons" / "zed.svg",
-                config_dir_prefix="zed/db/0-stable",
+                config_dir_prefix=f"{zed_dir_name}/db/0-stable",
                 binaries=["zed", "zeditor"])
         ]
         self.editors = [e for e in editors if e.binary is not None]
