@@ -31,6 +31,7 @@ md_name = "Zed Workspaces"
 md_description = "Open your Zed workspaces"
 md_license = "MIT"
 md_url = "https://github.com/HarshNarayanJha/albert_zed_workspaces"
+md_lib_dependencies = ["python-dateutil"]
 md_authors = ["@HarshNarayanJha"]
 
 
