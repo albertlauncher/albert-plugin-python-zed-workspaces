@@ -1,4 +1,4 @@
-# Copyright (c) 2024 Harsh Narayan Jha
+# Copyright (c) 2025 Harsh Narayan Jha
 
 """
 This plugin allows you to quickly open workspaces in Zed Editor
