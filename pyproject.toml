@@ -1,0 +1,11 @@
+[project]
+name = "albert-plugin-python-zed-workspaces"
+version = "1.0"
+authors = [{ name = "Harsh Narayan Jha", email = "harshnj@proton.me" }]
+description = "Open your Zed workspaces"
+readme = "README.md"
+license = "LICENSE"
+requires-python = ">=3.13"
+dependencies = [
+    "python-dateutil>=2.9.0.post0",
+]
